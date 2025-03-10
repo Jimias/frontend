@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Päiväkirja</title>
+  <link rel="stylesheet" href="/src/css/style.css"> 
+</head>
+<body>
+   <!-- Navigaatiovalikko -->
+    <nav class="clearfix">
+        <div class="logo">WellTech</div>
+        <ul>
+            <li><a href="etusivu.html">Koti</a></li>
+            <li><a href="entries.html">Merkinnät</a></li>
+            <li><a href="userinfo.html">Omat tiedot</a></li>
+        </ul>
+    </nav>
+
+  <!-- Päiväkirjalomake -->
+  <div class="container">
+    <h2>Tee päiväkirja merkintä</h2>
+    <form id="create-entry-form">
+      <div>
+        <label for="entry_date">Päivämäärä:</label>
+        <input type="date" id="entry_date" name="entry_date" required />
+      </div>
+      <div>
+        <label for="mood">Mieli:</label>
+        <input type="text" id="mood" name="mood" required placeholder="Kirjoita mielialasi" />
+      </div>
+      <div>
+        <label for="weight">Paino (kg):</label>
+        <input type="number" id="weight" name="weight" required placeholder="Esim. 60" />
+      </div>
+      <div>
+        <label for="sleep_hours">Unet (tunnit):</label>
+        <input type="number" id="sleep_hours" name="sleep_hours" required placeholder="Esim. 6"/>
+      </div>
+      <div>
+        <label for="notes">Muistiinpanot:</label>
+        <input type="text" id="notes" name="notes" placeholder="Kirjoita muistiinpanosi" />
+      </div>
+      <div>
+        <input type="submit" value="Tallenna" />
+      </div>
+    </form>
+  </div>
+  
+<!-- Sivun alatunniste (footer) -->
+  <footer>
+    Copyright, EST GEE
+</footer>
+
+  <script type="module" src="/src/js/create-entry.js"></script>
+</body>
+</html>
