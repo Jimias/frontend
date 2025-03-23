@@ -1,3 +1,23 @@
+## Testaus yksilötehtävät
+
+### 1.
+Käytin seuraavia komentoja jotka löytyvät linkistä https://github.com/sakluk/projekti-terveyssovelluksen-kehitys/blob/main/ohjeet_testaus/01_asennukset.md terminaalissa saadakseni asennettua Robot Framework automaatiotestaustyökalun ja sen lisäosat.
+
+Alla olevassa kuvassa on asennusten testauksen tulos terminaalissa joka näyttää että asennukset ovat onnisuneet.
+![Asennukset](src/img/asennukset.png)
+
+
+
+
+
+
+
+
+
+
+
+## Projektin kuvaus
+
 ## Kuvakaappaukset käyttöliittymästä
 1. ![Käyttöliittymä 1](src/img/kayttoliittyma1.png)
 2. ![Käyttöliittymä 2](src/img/kayttoliittyma2.png)
@@ -42,6 +62,6 @@
 ---------------------------------
 
 
-## Referenssit ja käytetyt resurssit
+## Referenssit
 - Tuntiesimerkit
 - w3schools.com  
