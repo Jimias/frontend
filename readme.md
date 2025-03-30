@@ -6,6 +6,18 @@ Käytin seuraavia komentoja jotka löytyvät linkistä https://github.com/sakluk
 Alla olevassa kuvassa on asennusten testauksen tulos terminaalissa joka näyttää että asennukset ovat onnisuneet.
 ![Asennukset](src/img/asennukset.png)
 
+### 2. 
+Tein testin oman projektin kirjautumiselle onnistuneesti.Se täyttää käyttäjätunnuksen sekä salasanan ja sen jälkeen painaa kirjaudu nappia jonka jälkeen pääsee projektin etusivulle.  Alla olevassa kuvassa näkyy kuva onnistuneesta testistä. 
+![Tehtävä 2](src/img/tehtava2testi.png)
+
+### 3.
+
+### 4.
+Tein testin oman projektini päiväkirja merkinnän lisäämiselle. Käytin tehtävä 2 kirjautumis testiä jolloin se eka kirjautu sisään ja sen jälkeen painoi Uusi Merkintä sivua ja sitten täytti kaikki lomakkeen tiedot ja lopuksi painoi submit nappia. Alla olevassa kuvassa näkyy onnistunut testi
+![Tehtävä 4](src/img/tehtava4testi.png)
+
+
+
 
 
 

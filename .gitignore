@@ -13,6 +13,15 @@ dist-ssr
 *.local
 .venv
 
+# Playwrightin logit
+playwright-log-*.txt
+
+# Playwrightin raportit
+report.html
+*.xml
+requirements.txt
+log.html
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
