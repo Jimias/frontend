@@ -16,8 +16,13 @@ Tein testin oman projektin kirjautumiselle onnistuneesti.Se täyttää käyttäj
 Tein testin oman projektini päiväkirja merkinnän lisäämiselle. Käytin tehtävä 2 kirjautumis testiä jolloin se eka kirjautu sisään ja sen jälkeen painoi Uusi Merkintä sivua ja sitten täytti kaikki lomakkeen tiedot ja lopuksi painoi submit nappia. Alla olevassa kuvassa näkyy onnistunut testi
 ![Tehtävä 4](src/img/tehtava4testi.png)
 
+### 5.
+Tein testin oman projektin kirjautumiselle onnistuneesti käyttämällä env tiedostosta löytyvät Username ja passwordin.Se täyttää käyttäjätunnuksen sekä salasanan ja sen jälkeen painaa kirjaudu nappia jonka jälkeen pääsee projektin etusivulle.  Alla olevassa kuvassa näkyy kuva onnistuneesta testistä. 
+![Tehtävä 5](src/img/tehtava5testi.png)
 
-
+### 6.
+Tein testin oman projektin kirjautumiselle onnistuneesti käyttämällä cryptolibrarylla cryptattua Username ja passwordia.Se täyttää käyttäjätunnuksen sekä salasanan ja sen jälkeen painaa kirjaudu nappia jonka jälkeen pääsee projektin etusivulle.  Alla olevassa kuvassa näkyy kuva onnistuneesta testistä. 
+![Tehtävä 6](src/img/tehtava6testi.png)
 
 
 

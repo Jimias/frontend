@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 .venv
+.env
+private_key.json
+password_hash.json
 
 # Playwrightin logit
 playwright-log-*.txt
