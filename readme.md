@@ -24,10 +24,13 @@ Tein testin oman projektin kirjautumiselle onnistuneesti käyttämällä env tie
 Tein testin oman projektin kirjautumiselle onnistuneesti käyttämällä cryptolibrarylla cryptattua Username ja passwordia.Se täyttää käyttäjätunnuksen sekä salasanan ja sen jälkeen painaa kirjaudu nappia jonka jälkeen pääsee projektin etusivulle.  Alla olevassa kuvassa näkyy kuva onnistuneesta testistä. 
 ![Tehtävä 6](src/img/tehtava6testi.png)
 
+### 7. 
+Ohjasin testien loki- ja raporttitiedostot erilliseen outputs/-kansioon. komennolla robot --outputdir outputs tests/ tämä suoritti jokaisen testin ja lisäsi siihen liittyvät loki ja raporttitiedostot outputskansioon.
+Alla olevassa kuvassa näkyy tiedostot outputs kansiossa.
+![Tehtävä 7](src/img/tehtava7testi.png)
 
 
-
-
+### 8.
 
 
 

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-04-13T21:40:13.667162" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\OMISTAJA\Documents\html-hyte\FE\hyte-front\tests">
+<suite id="s1-s1" name="Front" source="C:\Users\OMISTAJA\Documents\html-hyte\FE\hyte-front\tests\front">
+<suite id="s1-s1-s1" name="Browser Demo" source="C:\Users\OMISTAJA\Documents\html-hyte\FE\hyte-front\tests\front\browser_demo.robot">
+<test id="s1-s1-s1-t1" name="Kirjaudu sisään" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-13T21:40:13.881610" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\OMISTAJA\\Documents\\html-hyte\\FE\\hyte-front\\outputs\\browser\\traces\\temp\\906fea78-ecc6-41e3-81b9-29b325971cd0"}</msg>
+<msg time="2025-04-13T21:40:13.907985" level="INFO">Starting Browser process C:\Users\OMISTAJA\Documents\html-hyte\FE\hyte-front\.venv\Lib\site-packages\Browser\wrapper\index.js using port 60973</msg>
+<msg time="2025-04-13T21:40:13.908169" level="INFO">Node startup parameters: ['node', 'C:\\Users\\OMISTAJA\\Documents\\html-hyte\\FE\\hyte-front\\.venv\\Lib\\site-packages\\Browser\\wrapper\\index.js', '60973']</msg>
+<msg time="2025-04-13T21:40:15.292259" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\OMISTAJA\\Documents\\html-hyte\\FE\\hyte-front\\outputs\\browser\\traces\\temp\\906fea78-ecc6-41e3-81b9-29b325971cd0"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-13T21:40:13.880839" elapsed="1.411769"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-13T21:40:15.966545" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/</msg>
+<msg time="2025-04-13T21:40:15.966666" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:5173/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-04-13T21:40:15.295094" elapsed="0.671801"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2025-04-13T21:40:15.978580" level="INFO">Title: 'Kirjautuminen'</msg>
+<arg>==</arg>
+<arg>Kirjautuminen</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-04-13T21:40:15.967420" elapsed="0.011273"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-13T21:40:15.980162" level="INFO">Types the text 'newusername2' in the given field.</msg>
+<arg>[name="username"]</arg>
+<arg>${Username}</arg>
+<arg>delay=0.1s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:15.978988" elapsed="1.465251"/>
+</kw>
+<kw name="Type Secret" owner="Browser">
+<arg>[name="password"]</arg>
+<arg>$Password</arg>
+<arg>delay=0.1s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given secret from ``variable_name`` into the text field
+found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:17.445455" elapsed="1.095634"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-13T21:40:18.544133" level="INFO">Clicks the element 'input[type="submit"]'.</msg>
+<arg>input[type="submit"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:18.542259" elapsed="0.062150"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-13T21:40:20.606311" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-13T21:40:18.604853" elapsed="2.001787"/>
+</kw>
+<msg time="2025-04-13T21:40:20.617993" level="INFO">Set timeout to: 10000</msg>
+<status status="PASS" start="2025-04-13T21:40:13.879872" elapsed="6.727751"/>
+</test>
+<status status="PASS" start="2025-04-13T21:40:13.702331" elapsed="6.918711"/>
+</suite>
+<suite id="s1-s1-s2" name="Create Entry" source="C:\Users\OMISTAJA\Documents\html-hyte\FE\hyte-front\tests\front\create_entry.robot">
+<test id="s1-s1-s2-t1" name="Lisää uusi päiväkirjamerkintä" line="13">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-13T21:40:20.646477" level="INFO">Switching browser to browser=32e34765-9b26-4e42-bddd-7b1c3983a40d</msg>
+<msg time="2025-04-13T21:40:20.652281" level="INFO">Successfully changed active browser: browser=32e34765-9b26-4e42-bddd-7b1c3983a40d</msg>
+<msg time="2025-04-13T21:40:20.653915" level="INFO">Reusing existing browser with id: browser=32e34765-9b26-4e42-bddd-7b1c3983a40d</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-13T21:40:20.645182" elapsed="0.009815"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-13T21:40:20.791460" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/</msg>
+<arg>http://localhost:5173/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-04-13T21:40:20.657215" elapsed="0.134889"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2025-04-13T21:40:20.800953" level="INFO">Title: 'Kirjautuminen'</msg>
+<arg>==</arg>
+<arg>Kirjautuminen</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-04-13T21:40:20.793615" elapsed="0.007643"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-13T21:40:20.803263" level="INFO">Types the text 'newusername2' in the given field.</msg>
+<arg>[name="username"]</arg>
+<arg>${username}</arg>
+<arg>delay=0.1s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:20.801912" elapsed="1.454386"/>
+</kw>
+<kw name="Type Secret" owner="Browser">
+<arg>[name="password"]</arg>
+<arg>$password</arg>
+<arg>delay=0.1s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given secret from ``variable_name`` into the text field
+found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:22.257499" elapsed="1.083874"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-13T21:40:23.345203" level="INFO">Clicks the element 'input[type="submit"]'.</msg>
+<arg>input[type="submit"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:23.342627" elapsed="0.044987"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-13T21:40:25.389917" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-13T21:40:23.388005" elapsed="2.002093"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-13T21:40:25.391613" level="INFO">Clicks the element 'text="Uusi Merkintä"'.</msg>
+<arg>text="Uusi Merkintä"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:25.390629" elapsed="0.099858"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-13T21:40:25.525473" level="INFO">Waited for Element with selector text="Tee päiväkirja merkintä" at state visible</msg>
+<arg>text="Tee päiväkirja merkintä"</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-13T21:40:25.491527" elapsed="0.034747"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-04-13T21:40:25.531241" level="INFO">Fills the text '2024-03-30' in the given field.</msg>
+<arg>id=entry_date</arg>
+<arg>${DATE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:25.528658" elapsed="0.019623"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-04-13T21:40:25.549435" level="INFO">Fills the text '"Iloinen"' in the given field.</msg>
+<arg>id=mood</arg>
+<arg>${MOOD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:25.548692" elapsed="0.017950"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-04-13T21:40:25.567818" level="INFO">Fills the text '81' in the given field.</msg>
+<arg>id=weight</arg>
+<arg>${WEIGHT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:25.567048" elapsed="0.016600"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-04-13T21:40:25.584972" level="INFO">Fills the text '8' in the given field.</msg>
+<arg>id=sleep_hours</arg>
+<arg>${SLEEP_HOURS}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:25.584098" elapsed="0.016865"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-04-13T21:40:25.602828" level="INFO">Fills the text '"Viimeine testi!"' in the given field.</msg>
+<arg>id=notes</arg>
+<arg>${NOTES}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:25.601480" elapsed="0.019000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-13T21:40:25.622151" level="INFO">Clicks the element 'input[type="submit"]'.</msg>
+<arg>input[type="submit"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:25.621217" elapsed="0.059720"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-13T21:40:27.682235" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-13T21:40:25.681314" elapsed="2.001288"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-04-13T21:40:28.097053" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-13T21:40:27.683678" elapsed="0.413623"/>
+</kw>
+<status status="PASS" start="2025-04-13T21:40:20.643606" elapsed="7.454105"/>
+</test>
+<status status="PASS" start="2025-04-13T21:40:20.636054" elapsed="7.488686"/>
+</suite>
+<suite id="s1-s1-s3" name="Login Crypt" source="C:\Users\OMISTAJA\Documents\html-hyte\FE\hyte-front\tests\front\login_crypt.robot">
+<test id="s1-s1-s3-t1" name="Kirjautuminen Kryptatuilla Tiedoilla" line="10">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-13T21:40:28.908140" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\OMISTAJA\\Documents\\html-hyte\\FE\\hyte-front\\outputs\\browser\\traces\\temp\\dd6e615f-b451-4f15-a7aa-9d9da472a4ad"}</msg>
+<msg time="2025-04-13T21:40:28.931883" level="INFO">Starting Browser process C:\Users\OMISTAJA\Documents\html-hyte\FE\hyte-front\.venv\Lib\site-packages\Browser\wrapper\index.js using port 60999</msg>
+<msg time="2025-04-13T21:40:28.932113" level="INFO">Node startup parameters: ['node', 'C:\\Users\\OMISTAJA\\Documents\\html-hyte\\FE\\hyte-front\\.venv\\Lib\\site-packages\\Browser\\wrapper\\index.js', '60999']</msg>
+<msg time="2025-04-13T21:40:30.254832" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\OMISTAJA\\Documents\\html-hyte\\FE\\hyte-front\\outputs\\browser\\traces\\temp\\dd6e615f-b451-4f15-a7aa-9d9da472a4ad"}</msg>
+<arg>chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-13T21:40:28.907092" elapsed="1.348131"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-13T21:40:30.665768" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/</msg>
+<msg time="2025-04-13T21:40:30.665873" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:5173/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-04-13T21:40:30.263461" elapsed="0.402577"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-04-13T21:40:30.668079" level="INFO">Fills the text '***' in the given field.</msg>
+<arg>input[name="username"]</arg>
+<arg>${Username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:30.666390" elapsed="0.073824"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-04-13T21:40:30.741887" level="INFO">Fills the text '$Password' in the given field.</msg>
+<arg>input[name="password"]</arg>
+<arg>$Password</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:30.740747" elapsed="0.021952"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-13T21:40:30.764080" level="INFO">Clicks the element 'input[type="submit"]'.</msg>
+<arg>input[type="submit"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:30.763144" elapsed="0.067491"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-13T21:40:32.832331" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-13T21:40:30.831053" elapsed="2.001724"/>
+</kw>
+<msg time="2025-04-13T21:40:32.843849" level="INFO">Set timeout to: 10000</msg>
+<msg time="2025-04-13T21:40:32.864135" level="INFO">Switching context to context=a3dac032-a01b-4050-89ff-ff79e81b7469 in CURRENT</msg>
+<msg time="2025-04-13T21:40:32.873559" level="INFO">Successfully changed active context: context=a3dac032-a01b-4050-89ff-ff79e81b7469</msg>
+<msg time="2025-04-13T21:40:32.932936" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-04-13T21:40:28.903911" elapsed="3.929975"/>
+</test>
+<status status="PASS" start="2025-04-13T21:40:28.153095" elapsed="4.795618"/>
+</suite>
+<suite id="s1-s1-s4" name="Login Env" source="C:\Users\OMISTAJA\Documents\html-hyte\FE\hyte-front\tests\front\login_env.robot">
+<test id="s1-s1-s4-t1" name="Kirjaudu sisään käyttäen .env-tiedostoa" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-13T21:40:32.980820" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\OMISTAJA\\Documents\\html-hyte\\FE\\hyte-front\\outputs\\browser\\traces\\temp\\02bbaf83-69b9-4b08-a375-caca51b2a607"}</msg>
+<msg time="2025-04-13T21:40:33.267865" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\OMISTAJA\\Documents\\html-hyte\\FE\\hyte-front\\outputs\\browser\\traces\\temp\\02bbaf83-69b9-4b08-a375-caca51b2a607"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-13T21:40:32.978837" elapsed="0.289414"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-13T21:40:33.737683" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/</msg>
+<msg time="2025-04-13T21:40:33.737838" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:5173/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-04-13T21:40:33.275432" elapsed="0.462815"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2025-04-13T21:40:33.746299" level="INFO">Title: 'Kirjautuminen'</msg>
+<arg>==</arg>
+<arg>Kirjautuminen</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-04-13T21:40:33.738790" elapsed="0.007643"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-13T21:40:33.748299" level="INFO">Types the text 'newusername2' in the given field.</msg>
+<arg>[name="username"]</arg>
+<arg>${Username}</arg>
+<arg>delay=0.1s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:33.746732" elapsed="1.451629"/>
+</kw>
+<kw name="Type Secret" owner="Browser">
+<arg>[name="password"]</arg>
+<arg>$Password</arg>
+<arg>delay=0.1s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given secret from ``variable_name`` into the text field
+found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:35.199534" elapsed="1.097347"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-13T21:40:36.299860" level="INFO">Clicks the element 'input[type="submit"]'.</msg>
+<arg>input[type="submit"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-13T21:40:36.297989" elapsed="0.051428"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-13T21:40:38.350752" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-13T21:40:36.349842" elapsed="2.001083"/>
+</kw>
+<msg time="2025-04-13T21:40:38.355964" level="INFO">Set timeout to: 10000</msg>
+<status status="PASS" start="2025-04-13T21:40:32.977498" elapsed="5.373929"/>
+</test>
+<status status="PASS" start="2025-04-13T21:40:32.958076" elapsed="5.398953"/>
+</suite>
+<status status="PASS" start="2025-04-13T21:40:13.700827" elapsed="24.659773"/>
+</suite>
+<status status="PASS" start="2025-04-13T21:40:13.668693" elapsed="24.693004"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="4" fail="0" skip="0">Tests</stat>
+<stat name="Front" id="s1-s1" pass="4" fail="0" skip="0">Tests.Front</stat>
+<stat name="Browser Demo" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.Front.Browser Demo</stat>
+<stat name="Create Entry" id="s1-s1-s2" pass="1" fail="0" skip="0">Tests.Front.Create Entry</stat>
+<stat name="Login Crypt" id="s1-s1-s3" pass="1" fail="0" skip="0">Tests.Front.Login Crypt</stat>
+<stat name="Login Env" id="s1-s1-s4" pass="1" fail="0" skip="0">Tests.Front.Login Env</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
