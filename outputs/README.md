@@ -2,5 +2,5 @@
 
 Tässä kansiossa on testien suorittamisesta generoidut tulostiedostot:
 
-- [report.html](/outputs/report.html) - testiraportti
-- [log.html](/outputs/log.html) - lokitiedosto
+- [report.html](frontend/outputs/report.html) - testiraportti
+- [log.html](frontend/outputs/log.html) - lokitiedosto
