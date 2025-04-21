@@ -1,3 +1,18 @@
+# Github IO sivu 
+
+## Tests kansion Tests.md
+
+### Kansiosta löytyy Projekti sovellukselle tehtyjen Robot framework testien tiedostot.
+- [Tests.md](/tests/front/tests.md)
+
+## Outputs kansion Outputs.md
+
+### Kansiosta löytyy projekti sovelluksen testien outputs tiedostot.
+- [Outputs.md](/outputs/README.md)
+
+
+# Tehtävien dokumentointi
+
 ## Testaus yksilötehtävät
 
 ### 1.
@@ -28,9 +43,6 @@ Tein testin oman projektin kirjautumiselle onnistuneesti käyttämällä cryptol
 Ohjasin testien loki- ja raporttitiedostot erilliseen outputs/-kansioon. komennolla robot --outputdir outputs tests/ tämä suoritti jokaisen testin ja lisäsi siihen liittyvät loki ja raporttitiedostot outputskansioon.
 Alla olevassa kuvassa näkyy tiedostot outputs kansiossa.
 ![Tehtävä 7](src/img/tehtava7testi.png)
-
-
-### 8.
 
 
 
