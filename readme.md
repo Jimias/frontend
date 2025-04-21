@@ -1,4 +1,4 @@
-# Github IO sivu 
+# Github IO sivu
 
 ## Tests kansion Tests.md
 
@@ -25,8 +25,6 @@ Alla olevassa kuvassa on asennusten testauksen tulos terminaalissa joka näyttä
 Tein testin oman projektin kirjautumiselle onnistuneesti.Se täyttää käyttäjätunnuksen sekä salasanan ja sen jälkeen painaa kirjaudu nappia jonka jälkeen pääsee projektin etusivulle.  Alla olevassa kuvassa näkyy kuva onnistuneesta testistä. 
 ![Tehtävä 2](src/img/tehtava2testi.png)
 
-### 3.
-
 ### 4.
 Tein testin oman projektini päiväkirja merkinnän lisäämiselle. Käytin tehtävä 2 kirjautumis testiä jolloin se eka kirjautu sisään ja sen jälkeen painoi Uusi Merkintä sivua ja sitten täytti kaikki lomakkeen tiedot ja lopuksi painoi submit nappia. Alla olevassa kuvassa näkyy onnistunut testi
 ![Tehtävä 4](src/img/tehtava4testi.png)
@@ -44,11 +42,17 @@ Ohjasin testien loki- ja raporttitiedostot erilliseen outputs/-kansioon. komenno
 Alla olevassa kuvassa näkyy tiedostot outputs kansiossa.
 ![Tehtävä 7](src/img/tehtava7testi.png)
 
+### 8.
+Julkaisin projektini Github pages sivustona. Se löytyy osoitteesta (https://jimias.github.io/frontend/)
+Alla olevassa kuvassa näkyy Github.io sivustoni.
+![Tehtävä 8](src/img/tehtava8testi.png)
+
+### 10.
+Olen dokumenoinut tehtävien teon Github kansiooni tähän readme.md tiedostoon. 
+Jokaisesta tehdystä tehtävästä löytyy pieni kuvaus ja kuva.
 
 
-
-
-## Projektin kuvaus
+# Projektin kuvaus
 
 ## Kuvakaappaukset käyttöliittymästä
 1. ![Käyttöliittymä 1](src/img/kayttoliittyma1.png)
